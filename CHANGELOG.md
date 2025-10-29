@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/prosekit/prosemirror-drop-indicator/compare/v0.1.1...v0.1.2) (2025-10-29)
+
+
+### Bug Fixes
+
+* correct package.json urls ([#5](https://github.com/prosekit/prosemirror-drop-indicator/issues/5)) ([6c36354](https://github.com/prosekit/prosemirror-drop-indicator/commit/6c36354a325bb3208bb7fb45187e63c9cd81b65b))
+
 ## 0.1.1 (2025-10-29)
 
 
