@@ -7,12 +7,12 @@
   "author": "ocavue <ocavue@gmail.com>",
   "license": "MIT",
   "funding": "https://github.com/sponsors/ocavue",
-  "homepage": "https://github.com/ocavue/prosemirror-drop-indicator#readme",
+  "homepage": "https://github.com/prosekit/prosemirror-drop-indicator#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ocavue/prosemirror-drop-indicator.git"
+    "url": "https://github.com/prosekit/prosemirror-drop-indicator.git"
   },
-  "bugs": "https://github.com/ocavue/prosemirror-drop-indicator/issues",
+  "bugs": "https://github.com/prosekit/prosemirror-drop-indicator/issues",
   "keywords": [],
   "sideEffects": false,
   "main": "./dist/index.js",
