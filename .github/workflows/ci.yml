@@ -47,7 +47,7 @@ jobs:
           node-version: ${{ matrix.node }}
 
       - name: Install playwright
-        run: pnpm run playwright:install
+        run: pnpm run test:install
 
       - name: Build
         run: pnpm run build
