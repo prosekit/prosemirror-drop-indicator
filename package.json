@@ -2,7 +2,7 @@
   "name": "prosemirror-drop-indicator",
   "type": "module",
   "version": "0.1.2",
-  "packageManager": "pnpm@10.20.0",
+  "packageManager": "pnpm@10.23.0",
   "description": "A ProseMirror plugin for drop indicator",
   "author": "ocavue <ocavue@gmail.com>",
   "license": "MIT",
@@ -46,23 +46,23 @@
     "typecheck": "tsc -b"
   },
   "dependencies": {
-    "@ocavue/utils": "^0.8.1",
+    "@ocavue/utils": "^0.9.0",
     "prosemirror-model": "^1.25.4",
     "prosemirror-state": "^1.4.4",
     "prosemirror-view": "^1.41.3"
   },
   "devDependencies": {
-    "@ocavue/eslint-config": "^3.6.1",
-    "@ocavue/tsconfig": "^0.5.0",
+    "@ocavue/eslint-config": "^3.6.3",
+    "@ocavue/tsconfig": "^0.6.1",
     "@types/node": "^20.19.10",
-    "@vitest/browser-playwright": "^4.0.4",
+    "@vitest/browser-playwright": "^4.0.14",
     "eslint": "^9.38.0",
-    "jsdom": "^27.0.1",
-    "playwright": "^1.56.1",
+    "jsdom": "^27.2.0",
+    "playwright": "^1.57.0",
     "prettier": "^3.6.2",
-    "tsdown": "^0.15.11",
+    "tsdown": "^0.16.7",
     "typescript": "^5.9.3",
-    "vite": "^7.1.12",
-    "vitest": "^4.0.4"
+    "vite": "^7.2.4",
+    "vitest": "^4.0.14"
   }
 }
