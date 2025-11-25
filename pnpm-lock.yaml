@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@ocavue/utils':
-        specifier: ^0.8.1
-        version: 0.8.1
+        specifier: ^1.0.0
+        version: 1.0.0
       prosemirror-model:
         specifier: ^1.25.4
         version: 1.25.4
@@ -465,8 +465,8 @@ packages:
   '@ocavue/tsconfig@0.5.0':
     resolution: {integrity: sha512-j7ys2K6hnUKTJNQL48ZrCxB64Arml48MBcdGt/EDQXvP8k/s1GvNUeBxUx7+hKXojOQ1L9E3FkpXwTg3DDjduA==}
 
-  '@ocavue/utils@0.8.1':
-    resolution: {integrity: sha512-MdjR7B9HqonNmdUENjuPysZLsaU21d0QqNSFw41d9Qm9PbO+n+a/Cv7sP+SLvHglMNsHtudSg948sF9oxEa/Qg==}
+  '@ocavue/utils@1.0.0':
+    resolution: {integrity: sha512-SO2E0WtmpW66IxEzt15A05xlATek5bOtnm3Eg+R+6YI6InO3CytGMVUOc6jg9RxVLZc67ieJW1uDi/JM8QWIPQ==}
 
   '@oxc-project/runtime@0.95.0':
     resolution: {integrity: sha512-qJS5pNepwMGnafO9ayKGz7rfPQgUBuunHpnP1//9Qa0zK3oT3t1EhT+I+pV9MUA+ZKez//OFqxCxf1vijCKb2Q==}
@@ -3210,7 +3210,7 @@ snapshots:
 
   '@ocavue/tsconfig@0.5.0': {}
 
-  '@ocavue/utils@0.8.1': {}
+  '@ocavue/utils@1.0.0': {}
 
   '@oxc-project/runtime@0.95.0': {}
 
