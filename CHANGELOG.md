@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.4](https://github.com/prosekit/prosemirror-drop-indicator/compare/v0.1.3...v0.1.4) (2026-06-09)
+
+
+### Bug Fixes
+
+* correct plugin name ([#17](https://github.com/prosekit/prosemirror-drop-indicator/issues/17)) ([0102f7b](https://github.com/prosekit/prosemirror-drop-indicator/commit/0102f7bc332f5b2adf80275c4eb72358dc96dc78))
+
 ## [0.1.3](https://github.com/prosekit/prosemirror-drop-indicator/compare/v0.1.2...v0.1.3) (2025-11-25)
 
 
