@@ -70,8 +70,7 @@ export function createTestView({
   container.classList.add('test-editor-root')
   document.body.appendChild(container)
 
-  let view: EditorView
-  view = new EditorView(container, {
+  const view = new EditorView(container, {
     state,
     dispatchTransaction(tr) {
       const newState = view.state.apply(tr)
