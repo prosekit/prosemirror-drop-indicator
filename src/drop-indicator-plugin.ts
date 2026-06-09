@@ -44,7 +44,7 @@ export function createDropIndicatorPlugin(
   let getTarget: GetTarget | undefined
 
   return new Plugin({
-    key: new PluginKey('prosekit-drop-indicator'),
+    key: new PluginKey('prosemirror-drop-indicator'),
     view: (view) => {
       getTarget = buildGetTarget(view, options.onDrag)
       return createDropIndicatorView(view, getTarget, options)
