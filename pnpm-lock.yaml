@@ -9,16 +9,16 @@ importers:
   .:
     dependencies:
       '@ocavue/utils':
-        specifier: ^1.0.0
+        specifier: ^1.6.0
         version: 1.6.0
       prosemirror-model:
-        specifier: ^1.25.4
+        specifier: ^1.25.7
         version: 1.25.7
       prosemirror-state:
         specifier: ^1.4.4
         version: 1.4.4
       prosemirror-view:
-        specifier: ^1.41.3
+        specifier: ^1.41.8
         version: 1.41.8
     devDependencies:
       '@ocavue/eslint-config':
@@ -40,7 +40,7 @@ importers:
         specifier: ^1.60.0
         version: 1.60.0
       prettier:
-        specifier: ^3.8.0
+        specifier: ^3.8.3
         version: 3.8.3
       tsdown:
         specifier: ^0.22.2
