@@ -9,7 +9,7 @@ import {
 import type { EditorView } from 'prosemirror-view'
 
 import { buildGetTarget, type GetTarget } from './drop-target'
-import type { DragEventHandler, ShowHandler, ViewDragging } from './types'
+import type { DragEventHandler, ShowHandler } from './types'
 
 /**
  * @public
@@ -58,28 +58,28 @@ export function createDropIndicatorPlugin(
         if (!target) return false
 
         event.preventDefault()
-        let insertPos = target[0]
+        const insertPos = target[0]
 
-        let tr = view.state.tr
+        const tr = view.state.tr
         if (move) {
-          let { node } = (view.dragging as ViewDragging | null) || {}
+          const { node } = (view.dragging) || {}
           if (node) node.replace(tr)
           else tr.deleteSelection()
         }
 
-        let pos = tr.mapping.map(insertPos)
-        let isNode =
+        const pos = tr.mapping.map(insertPos)
+        const isNode =
           slice.openStart == 0 &&
           slice.openEnd == 0 &&
           slice.content.childCount == 1
-        let beforeInsert = tr.doc
+        const beforeInsert = tr.doc
         if (isNode) tr.replaceRangeWith(pos, pos, slice.content.firstChild!)
         else tr.replaceRange(pos, pos, slice)
         if (tr.doc.eq(beforeInsert)) {
           return true
         }
 
-        let $pos = tr.doc.resolve(pos)
+        const $pos = tr.doc.resolve(pos)
         if (
           isNode &&
           NodeSelection.isSelectable(slice.content.firstChild!) &&
@@ -119,7 +119,7 @@ function createDropIndicatorView(
   getTarget: GetTarget,
   options: DropIndicatorPluginOptions,
 ): PluginView {
-  let dom = view.dom
+  const dom = view.dom
   let hideId: ReturnType<typeof setTimeout> | undefined
   let prevX: number | undefined
   let prevY: number | undefined
@@ -147,7 +147,7 @@ function createDropIndicatorView(
     prevX = clientX
     prevY = clientY
 
-    let target = getTarget([clientX, clientY], event)
+    const target = getTarget([clientX, clientY], event)
 
     if (!target) {
       scheduleHide()
