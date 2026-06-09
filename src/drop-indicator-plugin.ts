@@ -1,4 +1,4 @@
-import type { ResolvedPos } from 'prosemirror-model'
+import type { ResolvedPos, Slice } from 'prosemirror-model'
 import {
   NodeSelection,
   Plugin,
@@ -62,7 +62,12 @@ export function createDropIndicatorPlugin(
 
         const tr = view.state.tr
         if (move) {
-          const { node } = (view.dragging) || {}
+          const { node } =
+            (view.dragging as {
+              slice: Slice
+              move: boolean
+              node?: NodeSelection
+            }) || {}
           if (node) node.replace(tr)
           else tr.deleteSelection()
         }
