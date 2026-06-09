@@ -16,16 +16,16 @@ type DropTarget = readonly [pos: number, line: Line]
 
 function getTargetsByView(view: EditorView): DropTarget[] {
   type StackItem = [pos: number, node: ProseMirrorNode]
-  let stack: StackItem[] = [[-1, view.state.doc]]
-  let targets: DropTarget[] = []
+  const stack: StackItem[] = [[-1, view.state.doc]]
+  const targets: DropTarget[] = []
 
   while (stack.length > 0) {
     const [pos, node] = stack.pop()!
     if (pos >= 0) {
-      let dom = view.nodeDOM(pos)
+      const dom = view.nodeDOM(pos)
       if (dom && isHTMLElement(dom)) {
-        let rect = dom.getBoundingClientRect()
-        let { top, bottom, left: x1, right: x2 } = rect
+        const rect = dom.getBoundingClientRect()
+        const { top, bottom, left: x1, right: x2 } = rect
         targets.push(
           [pos, [x1, top, x2, top]],
           [pos + node.nodeSize, [x1, bottom, x2, bottom]],
@@ -34,7 +34,7 @@ function getTargetsByView(view: EditorView): DropTarget[] {
     }
     if (node.isBlock && !node.isTextblock) {
       let childPos = pos + 1
-      for (let child of node.children) {
+      for (const child of node.children) {
         stack.push([childPos, child])
         childPos += child.nodeSize
       }

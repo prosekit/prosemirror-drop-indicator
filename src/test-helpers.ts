@@ -1,8 +1,8 @@
+import './test-style.css'
+
 import { Schema, type Node as ProseMirrorNode } from 'prosemirror-model'
 import { EditorState, type Plugin, NodeSelection } from 'prosemirror-state'
 import { EditorView } from 'prosemirror-view'
-
-import './test-style.css'
 
 export const testSchema = new Schema({
   nodes: {
@@ -70,8 +70,7 @@ export function createTestView({
   container.classList.add('test-editor-root')
   document.body.appendChild(container)
 
-  let view: EditorView
-  view = new EditorView(container, {
+  const view = new EditorView(container, {
     state,
     dispatchTransaction(tr) {
       const newState = view.state.apply(tr)
