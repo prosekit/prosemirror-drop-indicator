@@ -52,14 +52,14 @@
     "prosemirror-view": "^1.41.8"
   },
   "devDependencies": {
-    "@ocavue/eslint-config": "^4.5.10",
+    "@ocavue/eslint-config": "^4.12.1",
     "@ocavue/tsconfig": "^0.7.1",
     "@types/node": "^22.0.0",
     "@vitest/browser-playwright": "^4.1.8",
-    "eslint": "^10.4.1",
+    "eslint": "^10.8.0",
     "playwright": "^1.60.0",
     "prettier": "^3.8.3",
-    "tsdown": "^0.22.2",
+    "tsdown": "^0.22.14",
     "typescript": "^6.0.3",
     "vite": "^8.0.16",
     "vitest": "^4.1.8"
