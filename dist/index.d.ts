@@ -1,7 +1,6 @@
 import { NodeSelection, Plugin } from "prosemirror-state";
 import { Slice } from "prosemirror-model";
 import { EditorView } from "prosemirror-view";
-
 //#region src/types.d.ts
 /**
  * A function that will be called when the `dragover` event is fired. You can
