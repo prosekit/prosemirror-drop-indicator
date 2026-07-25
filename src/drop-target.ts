@@ -114,7 +114,7 @@ export function buildGetTarget(
     // If the dragging node is already at the target position, we ignore this
     // target. Notice that we don't pick the second better target here.
     if (target && isDraggingToItself(view, target[0])) {
-      return undefined
+      return
     }
 
     return target
